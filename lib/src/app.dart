@@ -21,15 +21,19 @@ class MyApp extends StatelessWidget {
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
 
     );
+
   }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
 
   @override
+
   State<MyHomePage> createState() => _MyHomePage();
+
 }
 
 class _MyHomePage extends State<MyHomePage> {
@@ -58,8 +62,9 @@ class _MyHomePage extends State<MyHomePage> {
             builder: (context) =>
                 AlertDialog(
                   title: const Text('CAUTION'),
-                  content: const Text('This application uses Bluetooth.\nMake sure your device\'s Bluetooth is turned on or off.'),
-                  actions: <Widget> [
+                  content: const Text(
+                      'This application uses Bluetooth.\nMake sure your device\'s Bluetooth is turned on or off.'),
+                  actions: <Widget>[
                     OutlinedButton(
                         onPressed: () {
                           openAppSettings();
