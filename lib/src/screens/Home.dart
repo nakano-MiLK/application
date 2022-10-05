@@ -11,7 +11,11 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.lightBlueAccent,
       ),
       body: const Center(
-          child: Text('Home画面', style: TextStyle(fontSize: 32.0))),
+          child: Text('Development of Data Transmission Method Using Ad Hoc Communication',
+              style: TextStyle(fontSize: 32.0),
+              textAlign: TextAlign.center,
+              overflow: TextOverflow.clip,
+          )),
     );
   }
 }
